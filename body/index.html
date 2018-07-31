@@ -6,6 +6,11 @@
         background-size: cover;
     }
 
+    .test-image{
+        max-width: 100%;
+        height: auto;
+    }
+
     #pageBody {
         padding: 0;
         margin: 0;
@@ -44,17 +49,36 @@
     .abbvie-products{
         font-size: 28px;
         color: #071d49;
+        margin: 40px 0;
     }
     .h-rule{
         border: 0;
         border-top: 2px solid gray;
     }
+    @media(max-width: 1100px){
+        .hero-image{
+            height: 270px;
+        }
+    }
+    @media(max-width: 997px){
+        .hero-image{
+            height: 200px;
+        }
+    }
+    @media(max-width: 767px){
+        .hero-image{
+            height: 95px;
+        }
+    }
+    @media(max-width: 350px){
+        .hero-image{
+            height: 75px;
+        }
+    }
 </style>
 
 <div id="body-div" class="container-fluid">
-    <div class="hero-image">
-
-    </div>
+        <img src="/assets/img/abbviegb/hero.png"  class="test-image" alt="">
     <div class="products container">
         <div>
             <div class="h-rule"></div>

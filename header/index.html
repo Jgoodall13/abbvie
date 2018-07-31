@@ -20,14 +20,23 @@
         height: 30px;
         margin-top: 25px;
     }
+
+    @media(max-width: 767px){
+        #header-div{
+            padding: 0;
+        }
+        .col-xs-6{
+            padding: 0
+        }
+    }
 </style>
 
 <div id="header-div" class="container-fluid">
     <div class="container">
-        <div class="col-md-6">
+        <div class="col-xs-6">
             <a href="/"><img src="/assets/img/abbviegb/abbvie_logo.svg" alt="logo" class="abbvie-logo"></a>
         </div>
-        <div class="col-md-6 cart-div">
+        <div class="col-xs-6 cart-div">
             <a class="view-cart white" href="/viewCart.jhtm">
                 <span class="bu-bye white">VIEW CART</span>
                 <i style="font-size: 36px" class="fa fa-shopping-cart white"></i>
