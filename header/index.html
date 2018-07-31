@@ -1,18 +1,36 @@
-
 <style>
-    #header-div{
-        background-color: #15194b;
+    #header-div {
+        background-color: #071d49;
+        height: 85px;
+    }
+
+    .cart-div {
+        text-align: right;
+        height: 85px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .white {
+        color: white
+    }
+
+    .abbvie-logo{
+        height: 30px;
+        margin-top: 25px;
     }
 </style>
 
 <div id="header-div" class="container-fluid">
     <div class="container">
         <div class="col-md-6">
-            <img src="" alt="logo">
+            <a href="/"><img src="/assets/img/abbviegb/abbvie_logo.svg" alt="logo" class="abbvie-logo"></a>
         </div>
-        <div class="col-md-6">
-            <a class="view-cart" href="/viewCart.jhtm">
-                <span class="bu-bye">VIEW CART</span> <i style="font-size: 36px" class="fa fa-shopping-cart"></i>
+        <div class="col-md-6 cart-div">
+            <a class="view-cart white" href="/viewCart.jhtm">
+                <span class="bu-bye white">VIEW CART</span>
+                <i style="font-size: 36px" class="fa fa-shopping-cart white"></i>
             </a>
         </div>
     </div>
